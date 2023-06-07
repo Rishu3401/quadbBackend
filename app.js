@@ -14,10 +14,6 @@ app.use((req, res, next) => {
     next();
 });
 
-mongoose.connect('mongodb+srv://rishukumar3401:8tqbQXx2F6yqNLFp@cluster0.oe1sxnd.mongodb.net/information', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-});
 
 const tickerSchema = new mongoose.Schema({
     name: String,
